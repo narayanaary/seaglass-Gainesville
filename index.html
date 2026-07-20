@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sea Glass Smoke Shop | Premium Curated Glass & Botanicals | Gainesville, FL</title>
+  <meta name="description" content="Gainesville's premier minimalist apothecary smoke shop. Curated premium flower, single-unit pre-rolls, precision tech, and bespoke custom glass pieces. Verified 21+ compliance required.">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Montserrat:wght@800&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      background-color: #F5F5F0;
+      color: #121212;
+      font-family: 'Inter', sans-serif;
+    }
+    .gate-container {
+      max-width: 600px;
+      margin: 100px auto;
+      padding: 40px;
+      background-color: #FFFFFF;
+      border: 1px solid #121212;
+      border-radius: 0px;
+      text-align: center;
+    }
+    .gate-container h1 {
+      font-family: 'Montserrat', sans-serif;
+      font-size: 2rem;
+      text-transform: uppercase;
+      margin-bottom: 24px;
+      letter-spacing: 1px;
+    }
+    .gate-container p {
+      font-size: 1rem;
+      line-height: 1.6;
+      margin-bottom: 32px;
+    }
+    .action-row {
+      display: flex;
+      gap: 16px;
+      justify-content: center;
+    }
+    button {
+      font-family: 'Montserrat', sans-serif;
+      font-weight: 800;
+      text-transform: uppercase;
+      padding: 16px 32px;
+      border: 1px solid #121212;
+      border-radius: 0px;
+      cursor: pointer;
+      font-size: 1rem;
+      transition: all 0.2s ease;
+    }
+    .confirm-btn {
+      background-color: #004225;
+      color: #FFFFFF;
+    }
+    .confirm-btn:hover {
+      background-color: #121212;
+    }
+    .deny-btn {
+      background-color: #333333;
+      color: #FFFFFF;
+    }
+    .deny-btn:hover {
+      background-color: #121212;
+    }
+    .suggestion-box {
+      margin-top: 48px;
+      padding: 32px;
+      background-color: #FFFFFF;
+      border: 1px solid #121212;
+      border-radius: 0px;
+    }
+    .suggestion-box h3 {
+      font-family: 'Montserrat', sans-serif;
+      font-size: 1.1rem;
+      text-transform: uppercase;
+      margin: 0 0 16px 0;
+      letter-spacing: 1px;
+    }
+    .suggestion-box textarea {
+      width: 100%;
+      height: 120px;
+      padding: 12px;
+      border: 1px solid #121212;
+      border-radius: 0px;
+      background-color: #F5F5F0;
+      font-family: 'Inter', sans-serif;
+      font-size: 0.95rem;
+      color: #121212;
+      resize: vertical;
+      box-sizing: border-box;
+      margin-bottom: 16px;
+    }
+    .suggestion-box textarea:focus {
+      outline: 1px solid #004225;
+    }
+    .submit-btn {
+      background-color: #121212;
+      color: #FFFFFF;
+      padding: 12px 24px;
+      font-size: 0.85rem;
+      border: none;
+      border-radius: 0px;
+    }
+    .submit-btn:hover {
+      background-color: #004225;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- COMPLIANCE AGE GATE -->
+  <div class="gate-container">
+    <h1>Age Verification</h1>
+    <p>You must be 21 years of age or older to access the Sea Glass digital fulfillment catalog. Background compliance verification is active during checkout.</p>
+    <div class="action-row">
+      <button class="confirm-btn" onclick="verifyAge()">I am 21+</button>
+      <button class="deny-btn" onclick="window.location.href='https://google.com'">Exit</button>
+    </div>
+  </div>
+
+  <!-- INTERACTIVE SYSTEM SCRIPT -->
+  <script>
+    function verifyAge() {
+      document.querySelector('.gate-container').style.display = 'none';
+      document.getElementById('storefront-catalog').style.display = 'block';
+    }
+    
+    function submitRequest(event) {
+      event.preventDefault();
+      const text = document.getElementById('custom-demand').value;
+      if (text.trim() === '') return;
+      window.location.href = `mailto:orders@seaglassgainesville.com?subject=Special Custom Product Request&body=${encodeURIComponent(text)}`;
+      document.getElementById('custom-demand').value = '';
+    }
+  </script>
+
+  <!-- STOREFRONT CATALOG FRAMEWORK -->
+  <div id="storefront-catalog" style="display: none; padding: 24px; max-width: 100%;">
+    
+    <!-- BRANDING LOGO COMPONENT -->
+    <div style="display: flex; align-items: center; justify-content: flex-start; margin-bottom: 40px; padding: 12px; border: 2px solid #121212; background: #FFFFFF; max-width: fit-content;">
+      <div style="width: 32px; height: 32px; background-color: #004225; border-right: 8px solid #121212; margin-right: 16px;"></div>
+      <span style="font-family: 'Montserrat', sans-serif; font-size: 1.4rem; font-weight: 800; letter-spacing: 3px; text-transform: uppercase; color: #121212;">SEA GLASS</span>
+    </div>
+
+    <!-- 01 / BOTANICAL FLOWER & PRE-ROLLS -->
+    <h2 style="font-family: 'Montserrat', sans-serif; font-size: 1.2rem; font-weight: 800; text-transform: uppercase; color: #121212; margin: 0 0 16px 0; letter-spacing: 2px; border-left: 4px solid #004225; padding-left: 8px;">01 / BOTANICAL FLOWER & PRE-ROLLS</h2>
+    <table style="width: 100%; border-collapse: collapse; text-align: left; margin-bottom: 32px;">
+      <thead>
+        <tr style="border-bottom: 2px solid #121212; color: #121212; font-size: 0.85rem; letter-spacing: 1px;">
+          <th style="padding: 12px 0; font-weight: 700;">SPECIFICATION</th>
+          <th style="padding: 12px 0; text-align: right; font-weight: 700;">UNIT RETAIL</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr style="border-bottom: 1px solid #121212;">
+          <td style="padding: 14px 0; color: #121212; font-size: 0.95rem;">Hemp Master Exotic Flower (3.5G Jar - Wedding Cake / Donny Burger)</td>
+          <td style="padding: 14px 0; text-align: right; font-weight: 700; color: #004225; font-size: 1.1rem;">$21</td>
+        </tr>
+        <tr style="border-bottom: 1px solid #121212;">
+          <td style="padding: 14px 0; color: #121212; font-size: 0.95rem;">Hemp Master Exotic Flower Premium (3.5G Jar - Gas Pie / Animal Cookies / Moonbow / Skunk House / Cherry Gelato / Gummy Worms / Oreoz)</td>
+          <td style="padding: 14px 0; text-align: right; font-weight: 700; color: #004225; font-size: 1.1rem;">$39</td>
+        </tr>
+        <tr style="border-bottom: 1px solid #121212;">
+          <td style="padding: 14px 0; color: #121212; font-size: 0.95rem;">Hemp Master Exotic Single Pre-Roll (1G / 28CT & 34CT Jars)</td>
+          <td style="padding: 14px 0; text-align: right; font-weight: 700; color: #004225; font-size: 1.1rem;">$5</td>
+        </tr>
+        <tr style="border-bottom: 1px solid #121212;">
+          <td style="padding: 14px 0; color: #121212; font-size: 0.95rem;">LIT Infused Single Pre-Roll (2G Diamond Infused - Strawberry Cough)</td>
+          <td style="padding: 14px 0; text-align: right; font-weight: 700; color: #004225; font-size: 1.1rem;">$5</td>
+        </tr>
+        <tr style="border-bottom: 1px solid #121212;">
+          <td style="padding: 14px 0; color: #121212; font-size: 0.95rem;">LIT King Size Single Pre-Roll (10CT Jar - Strawberry Gelato / Apple Fritter)</td>
+          <td style="padding: 14px 0; text-align: right; font-weight: 700; color: #004225; font-size: 1.1rem;">$5</td>
+        </tr>
+        <tr style="border-bottom: 1px solid #121212;">
+          <td style="padding: 14px 0; color: #121212; font-size: 0.95rem;">Hemp Master 2G Glass Tip Pre-Roll 16CT Case</td>
+          <td style="padding: 14px 0; text-align: right; font-weight: 700; color: #004225; font-size: 1.1rem;">$87</td>
+        </tr>
+        <tr style="border-bottom: 1px solid #121212;">
+          <td style="padding: 14px 0; color: #121212; font-size: 0.95rem;">Grabba Leaf Small (25 Pack Box)</td>
+          <td style="padding: 14px 0; text-align: right; font-weight: 700; color: #004225; font-size: 1.1rem;">$39</td>
+        </tr>
+        <tr style="border-bottom: 1px solid #121212;">
+          <td style="padding: 14px 0; color: #121212; font-size: 0.95rem;">Grabba Leaf Whole Leaf (10 Pack Box)</td>
+          <td style="padding: 14px 0; text-align: right; font-weight: 700; color: #004225; font-size: 1.1rem;">$35</td>
+        </tr>
+        <tr style="border-bottom: 1px solid #121212;">
+          <td style="padding: 14px 0; color: #121212; font-size: 0.95rem;">Swisher Sweet 3PK Mini (All Flavors)</td>
+          <td style="padding: 14px 0; text-align: right; font-weight: 700; color: #004225; font-size: 1.1rem;">$2</td>
+        </tr>
+        <tr style="border-bottom: 1px solid #121212;">
+          <td style="padding: 14px 0; color: #121212; font-size: 0.95rem;">Swisher Sweet 2 For $1.39 Cigarillos Box</td>
+          <td style="padding: 14px 0; text-align: right; font-weight: 700; color: #004225; font-size: 1.1rem;">$2</td>
+        </tr>
+        <tr style="border-bottom: 1px solid #121212;">
+          <td style="padding: 14px 0; color: #121212; font-size: 0.95rem;">Swisher Leaf Wraps 10-3PK Case</td>
+          <td style="padding: 14px 0; text-align: right; font-weight: 700; color: #004225; font-size: 1.1rem;">$3</td>
+        </tr>
+        <tr style="border-bottom: 1px solid #121212;">
+          <td style="padding: 14px 0; color: #121212; font-size: 0.95rem;">Slapwoods Wraps 5-10PK Case</td>
+          <td style="padding: 14px 0; text-align: right; font-weight: 700; color: #004225; font-size: 1.1rem;">$10</td>
+        </tr>
+        <tr style="border-bottom: 1px solid #121212;">
+          <td style="padding: 14px 0; color: #121212; font-size: 0.95rem;">Backwoods Premium 5PK Pack (All Blends)</td>
+          <td style="padding: 14px 0; text-align: right; font-weight: 700; color: #004225; font-size: 1.1rem;">$10</td>
+        </tr>
+        <tr style="border-bottom: 1px solid #121212;">
+          <td style="padding: 14px 0; color: #121212; font-size: 0.95rem;">Black & Mild $1.19 Box (25CT Casino / Regular / Sweets)</td>
+          <td style="padding: 14px 0; text-align: right; font-weight: 700; color: #004225; font-size: 1.1rem;">$30</td>
+        </tr>
+        <tr style="border-bottom: 1px solid #121212;">
+          <td style="padding: 14px 0; color: #121212; font-size: 0.95rem;">Black & Mild 10-5PK Case (Cream / Apple / Regular)</td>
+          <td style="padding: 14px 0; text-align: right; font-weight: 700; color: #004225; font-size: 1.1rem;">$7</td>
+        </tr>
+        <tr style="border-bottom: 1px solid #121212;">
+          <td style="padding: 14px 0; color: #121212; font-size: 0.95rem;">Buttas Hot Grabba Chipz Pouch Case (15PK & 20CT)</td>
+          <td style="padding: 14px 0; text-align: right; font-weight: 700; color: #004225; font-size: 1.1rem;">$5</td>
+        </tr>
+        <tr style="border-bottom: 1px solid #121212;">
+          <td style="padding: 14px 0; color: #121212; font-size: 0.95rem;">City Life 5 For $1.39 Box (Mixberry / Green Sweet)</td>
+          <td style="padding: 14px 0; text-align: right; font-weight: 700; color: #004225; font-size: 1.1rem;">$2</td>
+        </tr>
+        <tr style="border-bottom: 1px solid #121212;">
+          <td style="padding: 14px 0; color: #121212; font-size: 0.95rem;">Game Cigarillos 2 For $1.29 Box (Blue / Red Sweet / White Grape / White Peach / Black Sweets)</td>
+          <td style="padding: 14px 0; text-align: right; font-weight: 700; color: #004225; font-size: 1.1rem;">$2</td>
+        </tr>
+        <tr style="border-bottom: 1px solid #121212;">
+          <td style="padding: 14px 0; color: #121212; font-size: 0.95rem;">Game Mini 3 For $1.29 Box (Blue / Red Sweet)</td>
+          <td style="padding: 14px 0; text-align: right; font-weight: 700; color: #004225; font-size: 1.1rem;">$2</td>
+        </tr>
+        <tr style="border-bottom: 1px solid #121212;">
+          <td style="padding: 14px 0; color: #121212; font-size: 0.95rem;">Florida Exotics Flowers THCP 7G (Sour Diesel Sativa)</td>
+          <td style="padding: 14px 0; text-align: right; font-weight: 700; color: #004225; font-size: 1.1rem;">$28</td>
+        </tr>
+        <tr style="border-bottom: 1px solid #121212;">
+          <td style="padding: 14px 0; color: #121212; font-size: 0.95rem;">True Wraps Blends 2/2.99 Box (Vanilla / Aromatic)</td>
+          <td style="padding: 14px 0; text-align: right; font-weight: 700; color: #004225; font-size: 1.1rem;">$39</td>
+        </tr>
+        <tr style="border-bottom: 1px solid #121212;">
+          <td style="padding: 14px 0; color: #121212; font-size: 0.95rem;">Loose Leaf Wraps 8/5PK Box (Honey Bourbon / Natural Dark Leaf)</td>
+          <td style="padding: 14px 0; text-align: right; font-weight: 700; color: #004225; font-size: 1.1rem;">$46</td>
+        </tr>
+        <tr style="border-bottom: 1px solid #121212;">
+          <td style="padding: 14px 0; color: #121212; font-size: 0.95rem;">True Wrap 12-2 Packs $2.99 (Aromatic)</td>
+          <td style="padding: 14px 0; text-align: right; font-weight: 700; color: #004225; font-size: 1.1rem;">$4</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <!-- 02 / CURATED CBD & WELLNESS -->
+    <h2 style="font-family: 'Montserrat', sans-serif; font-size: 1.2rem; font-weight: 800; text-transform: uppercase; color: #121212; margin: 24px 0 16px 0; letter-spacing: 2px; border-left: 4px solid #004225; padding-left: 8px;">02 / CURATED CBD & WELLNESS</h2>
+    <table style="width: 100%; border-collapse: collapse; text-align: left; margin-bottom: 32px;">
+      <thead>
+        <tr style="border-bottom: 2px solid #121212; color: #121212; font-size: 0.85rem; letter-spacing: 1px;">
+          <th style="padding: 12px 0; font-weight: 700;">SPECIFICATION</th>
+          <th style="padding: 12px 0; text-align: right; font-weight: 700;">UNIT RETAIL</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr style="border-bottom: 1px solid #121212;">
+          <td style="padding: 14px 0; color: #121212; font-size: 0.95rem;">Opia High Potency Kratom Extract Tablets 240mg 4PK</td>
+          <td style="padding: 14px 0; text-align: right; font-weight: 700; color: #004225; font-size: 1.1rem;">$241</td>
+        </tr>
+        <tr style="border-bottom: 1px solid #121212;">
+          <td style="padding: 14px 0; color: #121212; font-size: 0.95rem;">MIT 45 Shots 15ML 12CT Gold Box</td>
+          <td style="padding: 14px 0; text-align: right; font-weight: 700; color: #004225; font-size: 1.1rem;">$158</td>
+        </tr>
+        <tr style="border-bottom: 1px solid #121212;">
+          <td style="padding: 14px 0; color: #121212; font-size: 0.95rem;">The Demon Gummy (D8+D9+CBD) 1000MG Jar</td>
+          <td style="padding: 14px 0; text-align: right; font-weight: 700; color: #004225; font-size: 1.1rem;">$136</td>
+        </tr>
+        <tr style="border-bottom: 1px solid #121212;">
+          <td style="padding: 14px 0; color: #121212; font-size: 0.95rem;">Gmy CBN Gummies 100mg 25CT Display Box (Sour Mango Indica)</td>
+          <td style="padding: 14px 0; text-align: right; font-weight: 700; color: #004225; font-size: 1.1rem;">$28</td>
+        </tr>
+        <tr style="border-bottom: 1px solid #121212;">
+          <td style="padding: 14px 0; color: #121212; font-size: 0.95rem;">Gmy D8 Gummies 25CT Display Box (Raspberry Kush Indica)</td>
+          <td style="padding: 14px 0; text-align: right; font-weight: 700; color: #004225; font-size: 1.1rem;">$46</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <!-- 03 / HARDWARE & GLASS -->
+    <h2 style="font-family: 'Montserrat', sans-serif; font-size: 1.2rem; font-weight: 800; text-transform: uppercase; color: #121212; margin: 24px 0 16px 0; letter-spacing: 2px; border-left: 4px solid #004225; padding-left: 8px;">03 / HARDWARE & GLASS</h2>
+    <table style="width: 100%; border-collapse: collapse; text-align: left; margin-bottom: 32px;">
+      <thead>
+        <tr style="border-bottom: 2px solid #121212; color: #121212; font-size: 0.85rem; letter-spacing: 1px;">
+          <th style="padding: 12px 0; font-weight: 700;">SPECIFICATION</th>
+          <th style="padding: 12px 0; text-align: right; font-weight: 700;">UNIT RETAIL</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr style="border-bottom: 1px solid #121212;">
+          <td style="padding: 14px 0; color: #121212; font-size: 0.95rem;">14 Inch Beaker Bong</td>
+          <td style="padding: 14px 0; text-align: right; font-weight: 700; color: #004225; font-size: 1.1rem;">$34</td>
+        </tr>
+        <tr style="border-bottom: 1px solid #121212;">
+          <td style="padding: 14px 0; color: #121212; font-weight: 700; font-size: 0.95rem;">10 Inch Rocket Glass Bong 930G</td>
+          <td style="padding: 14px 0; text-align: right; font-weight: 700; color: #004225; font-size: 1.1rem;">$34</td>
+        </tr>
+        <tr style="border-bottom: 1px solid #121212;">
+          <td style="padding: 14px 0; color: #121212; font-size: 0.95rem;">6.3 Inch One Eyed Monster Pipe Green 410G</td>
+          <td style="padding: 14px 0; text-align: right; font-weight: 700; color: #004225; font-size: 1.1rem;">$28</td>
+        </tr>
+        <tr style="border-bottom: 1px solid #121212;">
+          <td style="padding: 14px 0; color: #121212; font-size: 0.95rem;">Pipe 8 Inch Labubu Monster 640GM</td>
+          <td style="padding: 14px 0; text-align: right; font-weight: 700; color: #004225; font-size: 1.1rem;">$34</td>
+        </tr>
+        <tr style="border-bottom: 1px solid #121212;">
+          <td style="padding: 14px 0; color: #121212; font-size: 0.95rem;">Pipe 8 Inch Surprise Box Venom Monster 450 Beaker</td>
+          <td style="padding: 14px 0; text-align: right; font-weight: 700; color: #004225; font-size: 1.1rem;">$34</td>
+        </tr>
+        <tr style="border-bottom: 1px solid #121212;">
+          <td style="padding: 14px 0; color: #121212; font-size: 0.95rem;">Special Blue 20CT Torch Lighter Display (Mini Rubber)</td>
+          <td style="padding: 14px 0; text-align: right; font-weight: 700; color: #004225; font-size: 1.1rem;">$33</td>
+        </tr>
+        <tr style="border-bottom: 1px solid #121212;">
+          <td style="padding: 14px 0; color: #121212; font-size: 0.95rem;">Special Blue 540ML 9X Ultra Pure Butane Pack</td>
+          <td style="padding: 14px 0; text-align: right; font-weight: 700; color: #004225; font-size: 1.1rem;">$5</td>
+        </tr>
+        <tr style="border-bottom: 1px solid #121212;">
+          <td style="padding: 14px 0; color: #121212; font-size: 0.95rem;">Bic Printed 50CT Bohemian Lighter Display Box</td>
+          <td style="padding: 14px 0; text-align: right; font-weight: 700; color: #004225; font-size: 1.1rem;">$95</td>
+        </tr>
+        <tr style="border-bottom: 1px solid #121212;">
+          <td style="padding: 14px 0; color: #121212; font-size: 0.95rem;">Ooze Glyco Scarlet / Stallion Hand Pipe Box</td>
+          <td style="padding: 14px 0; text-align: right; font-weight: 700; color: #004225; font-size: 1.1rem;">$38</td>
+        </tr>
+        <tr style="border-bottom: 1px solid #121212;">
+          <td style="padding: 14px 0; color: #121212; font-size: 0.95rem;">Geek Vape Aegis Boost / Hero / Q Coils Pack</td>
+          <td style="padding: 14px 0; text-align: right; font-weight: 700; color: #004225; font-size: 1.1rem;">$10</td>
+        </tr>
+        <tr style="border-bottom: 1px solid #121212;">
+          <td style="padding: 14px 0; color: #121212; font-size: 0.95rem;">Gold Rush Nail Polish Remover 10ML Each</td>
+          <td style="padding: 14px 0; text-align: right; font-weight: 700; color: #004225; font-size: 1.1rem;">$7</td>
+        </tr>
+        <tr style="border-bottom: 1px solid #121212;">
+          <td style="padding: 14px 0; color: #121212; font-size: 0.95rem;">Blazy Susan Cotton Buds Pink 100CT</td>
+          <td style="padding: 14px 0; text-align: right; font-weight: 700; color: #004225; font-size: 1.1rem;">$4</td>
+        </tr>
+        <tr style="border-bottom: 1px solid #121212;">
+          <td style="padding: 14px 0; color: #121212; font-size: 0.95rem;">Blazy Susan Fanny Pack Pink / Purple</td>
+          <td style="padding: 14px 0; text-align: right; font-weigh
